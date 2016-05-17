@@ -1,0 +1,58 @@
+//cuidar os espaços
+
+http://shrib.com/angular-ufc
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Angular App</title>
+  	< src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></>
+  	< type="text/java" src="app.js"></>  
+  </head> <!-- chamada do angular direto do repositório do google -->
+  <body  ng-app="app" ng-controller="myCtrl">
+	
+<!-- Alterações feitas por colega:
+< src="http://ajax.googleapis.com/ajax/libs/jquery/v2.2.2/jquery.min.js"></>
+Adiciona a biblioteca do jquery para a agilidade do codigo
+
+$(document).ready(function(){
+  $('input').click(function(){})
+  $('p').html($('input').val());
+  });
+
+
+DIRETIVAS VISTAS: MODEL, CONTROL E APP
+DO A GIT
+DOWNLOAD SUBLIME
+}
+
+ -->
+  <p ng-repeat="pessoa in pessoas">
+    {{$index + 1}}
+  Dados do funcionário <br>
+	Nome: {{pessoa.name}}<br>
+	Idade: {{pessoa.idade}}<br>
+  Origem: {{pessoa.cidade}}<br>
+  Salario: {{pessoa.salario | currency}}<br> 
+  <p ng-show="pessoa.casado">Quer conhecer uma garota?</p>
+  <p ng-show="pessoa.name == 'Rodrigo'">O nome dela é Tássia</p>
+
+
+  <input type="text" ng-model="pessoa.name" /><br>
+
+
+
+   </body>
+  
+</html>
+
+
+
+
+
+---
+JS
+---
+
+
