@@ -1,0 +1,14 @@
+var app = angular.module("app", []);
+app.controller("myControl", function($scope) {
+	var pessoa = {};
+	pessoa.nome = "Davi";
+	pessoa.idade = 21;
+	pessoa.salario = 101;
+	pessoa.casado = true;
+	pessoa.foto = "http://photos.com.br/wp-content/uploads/2013/08/Albert-Einstein-na-sua-foto-mais-famosa.jpg";
+	pessoa.digaOi = function($nome) {
+		alert("Oi :D " + $nome);
+	};
+
+	$scope.pessoa = pessoa;
+});
